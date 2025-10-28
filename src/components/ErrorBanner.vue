@@ -1,0 +1,17 @@
+<template>
+  <div
+    v-if="message"
+    class="mb-4 p-3 bg-red-50 border border-red-200 text-red-800 rounded"
+  >
+    {{ message }}
+  </div>
+</template>
+
+<script setup>
+defineProps({
+  message: {
+    type: String,
+    required: false
+  }
+})
+</script>
